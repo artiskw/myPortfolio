@@ -7,6 +7,11 @@
 $primary_color: #fff;
 $secondary_color: #990000;
 
+$large-breakpoint: 1350px;
+$medium-breakpoint: 991px;
+$small-breakpoint: 767px;
+$mini-breakpoint: 575px;
+
 body {
     background: $primary_color;
     margin: 0 auto;
@@ -30,9 +35,10 @@ a {
         .navbar_container {
             width: 100%;
             height: pxToEm(70);
-            background: $secondary_color;
             position: fixed;
-
+            background: transparent;
+            transition: .5s;
+            
             .navbar {
                 width: pxToEm(1300);
                 margin: 0 auto;
@@ -56,9 +62,55 @@ a {
                         font-weight: 500;
                         font-size: pxToEm(18);
                         margin-left: 25px;
+                        transition: .5s;
 
                     &:hover {
                             color: $secondary_color;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+
+        .nav_scrolled {
+            background: $secondary_color;
+            transition: .5s;
+
+            .navbar {
+                width: pxToEm(1300);
+                margin: 0 auto;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .logo {
+                    a {
+                        svg {
+                            width: pxToEm(160);
+                            height: pxToEm(40);
+                            transition: .5s;
+
+                            path {
+                                fill: $primary_color;
+                                transition: .5s;
+                            }
+                        }
+                    }
+                }
+
+                nav {
+                    a {
+                        color: $primary_color;
+                        font-weight: 500;
+                        font-size: pxToEm(18);
+                        margin-left: 25px;
+                        transition: .5s;
+
+                    &:hover {
+                            color: #222;
+                            transition: .5s;
                         }
                     }
                 }
