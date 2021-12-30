@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@function pxToEm($from, $size: 16) { //px tiek izdaliti ar 16 un iegustam em
+    @return $from / $size + 0em;
+  }
+
+$primary_color: #fff;
+$secondary_color: #990000;
+
+body {
+    background: $primary_color;
+    margin: 0 auto;
+    min-height: 2000px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ header {
+    background: url("../img/headerbg2.jpg"), repeat;
+    width: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+
+    .header_container {
+        .navbar_container {
+            width: 100%;
+            height: pxToEm(70);
+            background: $secondary_color;
+            position: fixed;
+
+            .navbar {
+                width: pxToEm(1300);
+                margin: 0 auto;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .logo {
+                    a {
+                        svg {
+                            width: pxToEm(160);
+                            height: pxToEm(40);
+                        }
+                    }
+                }
+
+                nav {
+                    a {
+                        color: $primary_color;
+                        font-weight: 500;
+                        font-size: pxToEm(18);
+                        margin-left: 25px;
+
+                    &:hover {
+                            color: $secondary_color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .home_content {
+            width: pxToEm(1300);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            padding: 250px 0 250px 0;
+            color: $primary_color;
+            
+            p {
+               font-size: pxToEm(27); 
+               line-height: 0;
+            }
+            
+            h1 {
+                font-size: pxToEm(75);
+                font-weight: 600;
+                line-height: 0;
+            }
+
+            h3 {
+                font-size: pxToEm(40);
+                line-height: 0;
+
+                span {
+                 color: $secondary_color;   
+                }
+            }
+        }
+    }
+}
+
+.section_about {
+    width: pxToEm(1300);
+    margin: 0 auto;
+
+    .about {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;    
+
+        .title {
+            display: flex;
+            justify-content: center;
+           
+            h3 {
+              font-weight: 500; 
+              font-size: pxToEm(40);
+           } 
+        }
+
+        .img_script {
+            display: flex;
+            align-items: center;
+            
+            img {
+                width: pxToEm(400);
+                height: pxToEm(400);
+                border-radius: 6px;
+            }
+            
+            .script {
+                margin: 0 0 0 80px;
+                text-align: justify;
+                              
+                h3 {
+                    font-weight: 700;
+                    font-size: pxToEm(30);
+                   
+                    span {
+                        color: $secondary_color;
+                    }
+                }
+
+                p {
+                   font-size: pxToEm(18);
+                   font-weight: 400; 
+                }
+
+                a {
+                    background: $secondary_color;
+                    color: $primary_color;
+                    display: inline-block;
+                    font-size: pxToEm(20);
+                    margin: 40px 0 0 0;
+                    font-weight: 500;
+                    padding: 10px 30px;
+                    border-radius: 6px;
+                    border: 2px solid $secondary_color;
+                    transition: all .5s ease;
+
+                    &:hover {
+                        transition: all .5s ease;
+                        background: $primary_color;
+                        color: $secondary_color;
+                    }
+                }
+            }
+        }
+    }
+}
