@@ -6,7 +6,6 @@ const sectionOneOptions = {
     rootMargin: "-150px 0px 0px 0px" //150px no augass ieslegsies 
 };
 
-
 const sectionOneObserver = new IntersectionObserver 
 (function(
     entries,
@@ -25,3 +24,10 @@ const sectionOneObserver = new IntersectionObserver
 sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
+
+// Mobile menu
+    document.querySelector('.nav_menu_icon').onclick = function (event) {
+      document.querySelector('body').classList.toggle('active');
+      document.querySelector('.home_content').classList.toggle('active')
+      document.querySelector('.navbar_active nav').classList.toggle('active');
+  }
