@@ -7,11 +7,11 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
 
-<header>
+<header id="">
 <div class="header_container">
    <div class="navbar_container">
     <div class="navbar">
-        <div class="logo">
+        <div class="logo" id="home">
             <a href="#">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                     width="300.000000pt" height="97.000000pt" viewBox="0 0 300.000000 97.000000"
@@ -41,22 +41,14 @@
             </a>
         </div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#home" class="nav_link">Home</a>
+            <a href="#about" class="nav_link">About</a>
+            <a href="#projects" class="nav_link">Projects</a>
+            <a href="#contact" class="nav_link">Contact</a>
         </nav>
-        <div class="nav_menu_icon">
+        <div class="hamburger_icon">
             <i class="fa fa-bars"></i>
         </div>
-    </div>
-    <div class="navbar_active">
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-        </nav>
     </div>
    </div>
 <div class="home_content">
@@ -66,7 +58,7 @@
 </div>
 </div>
 </header>
-<section class="section_about">
+<section class="section_about" id="about">
     <div class="about">
         <div class="title">
             <h3>About Me</h3>
@@ -84,7 +76,7 @@
         </div>
     </div>
 </section>
-<section class="section_projects">
+<section class="section_projects" id="projects">
     <div class="section_projects_container">
         <div class="title">
             <h2>Projects</h2>
@@ -141,7 +133,7 @@
         </div>
     </div>
 </section>
-<section class="section_contact">
+<section class="section_contact" id="contact">
     <div class="section_contact_container">
         <div class="title">
             <h2>Contact Me</h2>
