@@ -28,34 +28,26 @@ sectionOneObserver.observe(sectionOne);
 
 /* Nav Menu */
 
-let hamburger = document.querySelector('.hamburger_icon');
-let navMenu = document.querySelector('nav');
+let hamburger = document.querySelector('.hamburger_icon'); // //atlasam elementu 
+let navMenu = document.querySelector('nav'); // //atlasam elementu 
 
 
-hamburger.addEventListener("click", mobileMenu);
-function mobileMenu() {
+hamburger.addEventListener("click", mobileMenu); //document.addEventListener() pievieno dokumentam notikumu apdarinātāju.
+function mobileMenu() { //zivedotai funkcijai mobileMenu()
     hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+    navMenu.classList.toggle("active"); //tad, kad bus kliskis uz hamburger, atversis navMenu
 }
 
 
+let navLink = document.querySelectorAll('a');
 
-let navLink = document.querySelectorAll('a'); //kapec negaja uz nav_link?
+navLink.forEach(n => n.addEventListener("click", closeMenu)); //forEach()Metode izsauc funkciju katram elementam masīva.
 
-navLink.forEach(n => n.addEventListener("click", closeMenu)); //
-
-function closeMenu() {
+function closeMenu() { //izvedojam funkciju closeMenu()
     hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
+    navMenu.classList.remove('active');//tad, kad bus kliskis uz hamburger, aizversies navMenu
   }
 
 
 
 
-/* 
-    document.querySelector('.nav_menu_icon').onclick = function (event) {
-      document.querySelector('body').classList.toggle('active');
-      document.querySelector('.home_content').classList.toggle('active')
-      document.querySelector('.navbar_active nav').classList.toggle('active');
-  }
-  */
