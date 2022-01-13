@@ -8,10 +8,10 @@
             <img src="img/es.jpg" alt="" width="400px" height="400">
             <div class="script_paragraph">
                 <h3>I'm Artis and   <span>Web Programmer</span></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                <p>Hey there! I'm a Web Developer. I can help you using the following technologies: HTML5, CSS, JavaScript,  PHP, jQuery, MySQL, WordPress, API. I am looking forward to working for you and building a long-term relationship! FAST Service!</p>
                 <div class="btn">
-                    <a href="#">Download CV</a>
-                    <a href="#">Go to my GitHub</a>
+                    <a href="#" target="blank">Download CV</a>
+                    <a href="https://github.com/artiskw/myPortfolio.git" target="blank">Go to my GitHub</a>
                 </div>  
             </div>
         </div>
@@ -21,7 +21,7 @@
     <div class="section_projects_container">
         <div class="title">
             <h2>Projects</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia sapiente ea perspiciatis earum recusandae in ullam commodi similique? Dolore rem beatae modi impedit quibusdam quia voluptates delectus consequatur ut eius.</p>
+            <p>Here will be an insight into my projects</p>
         </div>
         <div class="projects_img_nav">
             <div class="gallery_grid">
@@ -83,7 +83,7 @@
             <div class="my_contact">  
                     <div class="my_contact_title">
                         <h3>Contact me</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, tempora eius. Est odio eaque aliquam repudiandae tempore dolorum, debitis magnam.</p>
+                        <p>Please contact me and i will let you know soon</p>
                     </div>
                     <div class="name_container">
                         <i class="fa fa-user"></i>
@@ -103,19 +103,19 @@
                         <i class="fa fa-envelope"></i>
                         <div class="info">
                             <h6>Email</h6>
-                            <p>artiskerpe@gmail.com</p>
+                            <a href="">artiskerpe@gmail.com</a>
                         </div>
                     </div>
-            </div>
+                </div>
             <div class="contact_us_container">
                 <h6>Message me</h6>
-                <form action="#">
+                <form action="answer.php" method="post">
                     <div class="fields">
                         <div class="field name">
                             <input type="text" placeholder="Name">
                         </div>
                         <div class="field email">
-                            <input type="email" placeholder="Email">
+                            <input name="email" type="email" placeholder="Email">
                         </div>
                     </div>
                     <div class="field subject">
@@ -125,8 +125,9 @@
                         <textarea name="text" cols="30" rows="10" placeholder="Message"></textarea>
                     </div>
                     <div class="btn_area">
-                        <button type="submit">Send message</button>
+                        <button type="submit" class="approve-email-btn">Send message</button>
                     </div>
+                    <div class="notifications"></div>
                 </form>
             </div>
         </div>

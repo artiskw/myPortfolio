@@ -5,7 +5,8 @@
 <link rel="stylesheet" href="~/lib/Font-Awesome/css/solid.min.css">
 <script src="https://use.fontawesome.com/d697109582.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<title>Portofilio</title>
 <header id="home">
     <div class="header_container">
         <div class="navbar_container">
